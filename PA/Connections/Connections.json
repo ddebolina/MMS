@@ -1,0 +1,73 @@
+{
+  "0e3d1e2e-01da-48f1-b901-226939daeeb8": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1670/1.0.1670.3526/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://wcoomdorg.sharepoint.com/sites/MMS": {
+        "dataSources": {
+          "Meeting List": {
+            "tableName": "03900c8b-4389-427b-8597-2267d7f27532"
+          },
+          "MeetingDoc": {
+            "tableName": "3206a216-6fe7-4144-959c-1628e2aa6a46"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Meeting List",
+      "MeetingDoc"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "0e3d1e2e-01da-48f1-b901-226939daeeb8"
+  },
+  "2832a306-5fab-41a2-8a07-9803a3e77035": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write",
+      "providers/PowerPlatform.Governance/Operations/Delete"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1670/1.0.1670.3526/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://wcoomdorg.sharepoint.com/sites/MMS": {
+        "dataSources": {
+          "Committee": {
+            "tableName": "569fb224-6ea7-4980-acdf-dee2d9f500ba"
+          },
+          "Notes": {
+            "tableName": "4af0aafc-f738-420c-a209-fac80d571994"
+          },
+          "Presentation": {
+            "tableName": "7f2bebc6-3d79-48d1-a163-97fc26c157d4"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Committee",
+      "Notes",
+      "Presentation"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "2832a306-5fab-41a2-8a07-9803a3e77035"
+  }
+}
