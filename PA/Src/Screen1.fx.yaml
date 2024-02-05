@@ -3527,13 +3527,13 @@
                         HoverBorderColor: =RGBA(16, 110, 190, 1)
                         HoverColor: =RGBA(50, 49, 48, 1)
                         HoverFill: =RGBA(245, 245, 245, 1)
-                        Items: =Choices([@Presentation].DocumentOriginator)
+                        Items: =Choices([@Presentation].'Document Originator')
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         PressedBorderColor: =RGBA(16, 110, 190, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 120, 212, 1)
                         SearchFields: =["DisplayName"]
-                        SearchItems: =Choices(Presentation.DocumentOriginator,DataCardValue23.SearchText)
+                        SearchItems: =Choices(Presentation.'Document Originator',DataCardValue23.SearchText)
                         SelectionFill: =RGBA(0, 120, 212, 1)
                         SelectMultiple: =false
                         Size: =13
@@ -3646,13 +3646,13 @@
                         HoverBorderColor: =RGBA(16, 110, 190, 1)
                         HoverColor: =RGBA(50, 49, 48, 1)
                         HoverFill: =RGBA(245, 245, 245, 1)
-                        Items: =Choices([@Presentation].DocumentLanguage)
+                        Items: =Choices([@Presentation].'Document Language')
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         PressedBorderColor: =RGBA(16, 110, 190, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 120, 212, 1)
                         SearchFields: =["Value"]
-                        SearchItems: =Choices(Presentation.DocumentLanguage,DataCardValue24.SearchText)
+                        SearchItems: =Choices(Presentation.'Document Language',DataCardValue24.SearchText)
                         SelectionFill: =RGBA(0, 120, 212, 1)
                         SelectMultiple: =false
                         Size: =13
@@ -4553,13 +4553,13 @@
                         HoverBorderColor: =RGBA(16, 110, 190, 1)
                         HoverColor: =RGBA(50, 49, 48, 1)
                         HoverFill: =RGBA(245, 245, 245, 1)
-                        Items: =Choices([@MeetingDoc].Approver1)
+                        Items: =Choices([@MeetingDoc].'Approver 1')
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         PressedBorderColor: =RGBA(16, 110, 190, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 120, 212, 1)
                         SearchFields: =["DisplayName"]
-                        SearchItems: =Choices(MeetingDoc.Approver1,DataCardValue56.SearchText)
+                        SearchItems: =Choices(MeetingDoc.'Approver 1',DataCardValue56.SearchText)
                         SelectionFill: =RGBA(0, 120, 212, 1)
                         SelectMultiple: =false
                         Size: =13
@@ -4787,13 +4787,13 @@
                         HoverBorderColor: =RGBA(16, 110, 190, 1)
                         HoverColor: =RGBA(50, 49, 48, 1)
                         HoverFill: =RGBA(245, 245, 245, 1)
-                        Items: =Choices([@MeetingDoc].Approver2)
+                        Items: =Choices([@MeetingDoc].'Approver 2')
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         PressedBorderColor: =RGBA(16, 110, 190, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 120, 212, 1)
                         SearchFields: =["DisplayName"]
-                        SearchItems: =Choices(MeetingDoc.Approver2,DataCardValue58.SearchText)
+                        SearchItems: =Choices(MeetingDoc.'Approver 2',DataCardValue58.SearchText)
                         SelectionFill: =RGBA(0, 120, 212, 1)
                         SelectMultiple: =false
                         Size: =13
@@ -5021,13 +5021,13 @@
                         HoverBorderColor: =RGBA(16, 110, 190, 1)
                         HoverColor: =RGBA(50, 49, 48, 1)
                         HoverFill: =RGBA(245, 245, 245, 1)
-                        Items: =Choices([@MeetingDoc].Approver3)
+                        Items: =Choices([@MeetingDoc].'Approver 3')
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         PressedBorderColor: =RGBA(16, 110, 190, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 120, 212, 1)
                         SearchFields: =["DisplayName"]
-                        SearchItems: =Choices(MeetingDoc.Approver3,DataCardValue60.SearchText)
+                        SearchItems: =Choices(MeetingDoc.'Approver 3',DataCardValue60.SearchText)
                         SelectionFill: =RGBA(0, 120, 212, 1)
                         SelectMultiple: =false
                         Size: =13

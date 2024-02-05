@@ -266,7 +266,7 @@
     "Name": "PowerApps_CoreControls_TextCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Text",
-    "Version": "0.0.20"
+    "Version": "0.0.21"
   },
   "toggleSwitch": {
     "CustomGroupControlTemplateName": "",

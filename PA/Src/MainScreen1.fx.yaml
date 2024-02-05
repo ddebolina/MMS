@@ -172,7 +172,7 @@
                     Fill: =RGBA(250, 250, 250, 1)
                     Items: =Search([@Committee], SearchInput1.Text, "Title", "Title")
                     Layout: =Layout.Vertical
-                    LayoutMinHeight: =287
+                    LayoutMinHeight: =300
                     LayoutMinWidth: =0
                     LoadingSpinner: =LoadingSpinner.Data
                     OnSelect: |-
@@ -187,17 +187,17 @@
                         DisabledColor: =RGBA(161, 159, 157, 1)
                         Font: =Font.'Segoe UI'
                         FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                        Height: =Self.Size * 1.8
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =12
                         PaddingRight: =0
                         PaddingTop: =0
+                        Size: =13
                         Text: =ThisItem.Title
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.TemplateWidth - 86
-                        X: =16
-                        Y: =(Parent.TemplateHeight - (Self.Size*1.8 + Subtitle1.Size*1.8 + 2 + Body1.Size*1.8)) / 2
+                        Width: =324
+                        X: =4
+                        Y: =7
                         ZIndex: =1
 
                     Subtitle1 As label:
@@ -216,7 +216,7 @@
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Title1.Width
                         X: =Title1.X
-                        Y: =Title1.Y + Title1.Height
+                        Y: =50
                         ZIndex: =2
 
                     Body1 As label:
@@ -235,7 +235,7 @@
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Title1.Width
                         X: =Title1.X
-                        Y: =Subtitle1.Y + Subtitle1.Height
+                        Y: =72
                         ZIndex: =3
 
                     NextArrow1 As icon.ChevronRight:
@@ -261,7 +261,7 @@
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Tooltip: ="View item details"
                         Width: =50
-                        X: =Parent.TemplateWidth - Self.Width - 12
+                        X: =312
                         Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                         ZIndex: =4
 
@@ -3699,13 +3699,13 @@
                         HoverBorderColor: =RGBA(16, 110, 190, 1)
                         HoverColor: =RGBA(50, 49, 48, 1)
                         HoverFill: =RGBA(245, 245, 245, 1)
-                        Items: =Choices([@Committee].Session_x002f_Meeting)
+                        Items: =Choices([@Committee].Session_Meeting)
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         PressedBorderColor: =RGBA(16, 110, 190, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 120, 212, 1)
                         SearchFields: =["Value"]
-                        SearchItems: =Choices(Committee.Session_x002f_Meeting,DataCardValue66.SearchText)
+                        SearchItems: =Choices(Committee.Session_Meeting,DataCardValue66.SearchText)
                         SelectionFill: =RGBA(0, 120, 212, 1)
                         SelectMultiple: =false
                         Size: =13
@@ -3818,13 +3818,13 @@
                         HoverBorderColor: =RGBA(16, 110, 190, 1)
                         HoverColor: =RGBA(50, 49, 48, 1)
                         HoverFill: =RGBA(245, 245, 245, 1)
-                        Items: =Choices([@Committee].CommitteeLanguages)
+                        Items: =Choices([@Committee].'Committee Languages')
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         PressedBorderColor: =RGBA(16, 110, 190, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 120, 212, 1)
                         SearchFields: =["Value"]
-                        SearchItems: =Choices(Committee.CommitteeLanguages,DataCardValue68.SearchText)
+                        SearchItems: =Choices(Committee.'Committee Languages',DataCardValue68.SearchText)
                         SelectionFill: =RGBA(0, 120, 212, 1)
                         Size: =13
                         Tooltip: =Parent.DisplayName
@@ -4380,13 +4380,13 @@
                         HoverBorderColor: =RGBA(16, 110, 190, 1)
                         HoverColor: =RGBA(50, 49, 48, 1)
                         HoverFill: =RGBA(245, 245, 245, 1)
-                        Items: =Choices([@Committee].Approver1)
+                        Items: =Choices([@Committee].'Approver 1')
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         PressedBorderColor: =RGBA(16, 110, 190, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 120, 212, 1)
                         SearchFields: =["Claims"]
-                        SearchItems: =Choices(Committee.Approver1,DataCardValue81.SearchText)
+                        SearchItems: =Choices(Committee.'Approver 1',DataCardValue81.SearchText)
                         SelectionFill: =RGBA(0, 120, 212, 1)
                         SelectMultiple: =false
                         Size: =13
@@ -4499,13 +4499,13 @@
                         HoverBorderColor: =RGBA(16, 110, 190, 1)
                         HoverColor: =RGBA(50, 49, 48, 1)
                         HoverFill: =RGBA(245, 245, 245, 1)
-                        Items: =Choices([@Committee].Approver2)
+                        Items: =Choices([@Committee].'Approver 2')
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         PressedBorderColor: =RGBA(16, 110, 190, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 120, 212, 1)
                         SearchFields: =["Claims"]
-                        SearchItems: =Choices(Committee.Approver2,DataCardValue83.SearchText)
+                        SearchItems: =Choices(Committee.'Approver 2',DataCardValue83.SearchText)
                         SelectionFill: =RGBA(0, 120, 212, 1)
                         SelectMultiple: =false
                         Size: =13
@@ -4618,13 +4618,13 @@
                         HoverBorderColor: =RGBA(16, 110, 190, 1)
                         HoverColor: =RGBA(50, 49, 48, 1)
                         HoverFill: =RGBA(245, 245, 245, 1)
-                        Items: =Choices([@Committee].Approver3)
+                        Items: =Choices([@Committee].'Approver 3')
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         PressedBorderColor: =RGBA(16, 110, 190, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 120, 212, 1)
                         SearchFields: =["Claims"]
-                        SearchItems: =Choices(Committee.Approver3,DataCardValue84.SearchText)
+                        SearchItems: =Choices(Committee.'Approver 3',DataCardValue84.SearchText)
                         SelectionFill: =RGBA(0, 120, 212, 1)
                         SelectMultiple: =false
                         Size: =13
@@ -4967,13 +4967,13 @@
                         HoverBorderColor: =RGBA(16, 110, 190, 1)
                         HoverColor: =RGBA(50, 49, 48, 1)
                         HoverFill: =RGBA(245, 245, 245, 1)
-                        Items: =Choices([@Committee].CommitteeSecratary)
+                        Items: =Choices([@Committee].'Committee Secratary')
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         PressedBorderColor: =RGBA(16, 110, 190, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 120, 212, 1)
                         SearchFields: =["Claims"]
-                        SearchItems: =Choices(Committee.CommitteeSecratary,DataCardValue87.SearchText)
+                        SearchItems: =Choices(Committee.'Committee Secratary',DataCardValue87.SearchText)
                         SelectionFill: =RGBA(0, 120, 212, 1)
                         SelectMultiple: =false
                         Size: =13
@@ -5926,13 +5926,13 @@
                         HoverBorderColor: =RGBA(16, 110, 190, 1)
                         HoverColor: =RGBA(50, 49, 48, 1)
                         HoverFill: =RGBA(245, 245, 245, 1)
-                        Items: =Choices([@'Meeting List'].DefaultAgendaLanguage)
+                        Items: =Choices([@'Meeting List'].'Default Agenda Language')
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         PressedBorderColor: =RGBA(16, 110, 190, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 120, 212, 1)
                         SearchFields: =["Value"]
-                        SearchItems: =Choices('Meeting List'.DefaultAgendaLanguage,DataCardValue96.SearchText)
+                        SearchItems: =Choices('Meeting List'.'Default Agenda Language',DataCardValue96.SearchText)
                         SelectionFill: =RGBA(0, 120, 212, 1)
                         SelectMultiple: =false
                         Size: =13
@@ -6045,13 +6045,13 @@
                         HoverBorderColor: =RGBA(16, 110, 190, 1)
                         HoverColor: =RGBA(50, 49, 48, 1)
                         HoverFill: =RGBA(245, 245, 245, 1)
-                        Items: =Choices([@'Meeting List'].AgendaManager)
+                        Items: =Choices([@'Meeting List'].'Agenda Manager')
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         PressedBorderColor: =RGBA(16, 110, 190, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 120, 212, 1)
                         SearchFields: =["Claims"]
-                        SearchItems: =Choices('Meeting List'.AgendaManager,DataCardValue97.SearchText)
+                        SearchItems: =Choices('Meeting List'.'Agenda Manager',DataCardValue97.SearchText)
                         SelectionFill: =RGBA(0, 120, 212, 1)
                         SelectMultiple: =false
                         Size: =13
@@ -6164,13 +6164,13 @@
                         HoverBorderColor: =RGBA(16, 110, 190, 1)
                         HoverColor: =RGBA(50, 49, 48, 1)
                         HoverFill: =RGBA(245, 245, 245, 1)
-                        Items: =Choices([@'Meeting List'].AgendaSub_x002d_Editor)
+                        Items: =Choices([@'Meeting List'].'Agenda Sub-Editor')
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         PressedBorderColor: =RGBA(16, 110, 190, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 120, 212, 1)
                         SearchFields: =["Claims"]
-                        SearchItems: =Choices('Meeting List'.AgendaSub_x002d_Editor,DataCardValue98.SearchText)
+                        SearchItems: =Choices('Meeting List'.'Agenda Sub-Editor',DataCardValue98.SearchText)
                         SelectionFill: =RGBA(0, 120, 212, 1)
                         SelectMultiple: =false
                         Size: =13
