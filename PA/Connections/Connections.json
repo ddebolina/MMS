@@ -15,6 +15,9 @@
     "datasets": {
       "https://wcoomdorg.sharepoint.com/sites/MMS": {
         "dataSources": {
+          "Agenda": {
+            "tableName": "ff522e3a-05d5-4d40-b287-8abe048e17fe"
+          },
           "Meeting List": {
             "tableName": "03900c8b-4389-427b-8597-2267d7f27532"
           },
@@ -26,7 +29,8 @@
     },
     "dataSources": [
       "Meeting List",
-      "MeetingDoc"
+      "MeetingDoc",
+      "Agenda"
     ],
     "dependencies": {},
     "dependents": [],

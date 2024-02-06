@@ -101,7 +101,7 @@
     },
     "Author": "",
     "BindingErrorCount": 0,
-    "ContainsThirdPartyPcfControls": false,
+    "ContainsThirdPartyPcfControls": true,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "DesktopOrTablet",
     "DocumentLayoutHeight": 768,
@@ -115,7 +115,6 @@
     "FileID": "4ef7fd0e-71ec-4426-a9a3-895b29e3ca37",
     "Id": "4ef7fd0e-71ec-4426-a9a3-895b29e3ca37",
     "InstrumentationKey": "",
-    "LocalDatabaseReferences": "{}",
     "ManualOfflineProfileId": "",
     "Name": "MMSApp",
     "OriginatingVersion": "1.336",
@@ -135,6 +134,8 @@
   },
   "ScreenOrder": [
     "MainScreen1",
-    "Screen1"
+    "Screen1",
+    "Screen2",
+    "Screen3"
   ]
 }

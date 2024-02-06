@@ -1,0 +1,15 @@
+{
+  "components": [
+    {
+      "Capabilities": {
+        "PCFExternalServiceUsageAllowed": false
+      },
+      "ComponentName": "CustomControl",
+      "Identifier": "pdd_CustomControl.PowerDragDrop",
+      "IdentifierType": 0
+    }
+  ],
+  "instanceUrl": "https://org1ddb440e.crm4.dynamics.com/",
+  "state": "Configured",
+  "webApiVersion": "v9.0"
+}

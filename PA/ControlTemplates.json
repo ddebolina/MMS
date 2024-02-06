@@ -211,6 +211,94 @@
     "OverridableProperties": {},
     "Version": "2.5.1"
   },
+  "pcfDataField": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/pcfDataField",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "pcfDataField",
+    "OverridableProperties": {},
+    "Version": "1.4.0"
+  },
+  "Power Drag Drop (1.1.0)": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": false,
+    "Id": "http://microsoft.com/appmagic/powercontrol/pdd_CustomControl.PowerDragDrop",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "pdd_CustomControl.PowerDragDrop",
+    "OverridableProperties": {
+      "CurrentItems": {
+        "Type": {
+          "EnumString": "",
+          "Kind": "Table",
+          "Name": "Root",
+          "Type": [
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "DropZoneId",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "Boolean",
+              "Name": "HasMovedPosition",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "Boolean",
+              "Name": "HasMovedZone",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "ItemId",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "OriginalDropZoneId",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "OriginalPosition",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "Position",
+              "Type": []
+            }
+          ]
+        },
+        "Version": "1.336"
+      }
+    },
+    "PCFDynamicSchemaForIRRetrieval": {
+      "CurrentItems": {
+        "DynamicSchema": "{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"ItemId\":{\"type\":\"string\"},\"DropZoneId\":{\"type\":\"string\"},\"OriginalDropZoneId\":{\"type\":\"string\"},\"Position\":{\"type\":\"number\"},\"OriginalPosition\":{\"type\":\"number\"},\"HasMovedZone\":{\"type\":\"boolean\"},\"HasMovedPosition\":{\"type\":\"boolean\"}}}}",
+        "PCFSkipValidation": false
+      }
+    },
+    "TemplateDisplayName": "Power Drag Drop (1.1.0)",
+    "Version": "1.1.0"
+  },
   "rectangle": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -238,6 +326,21 @@
     "Name": "screen",
     "OverridableProperties": {},
     "Version": "1.0"
+  },
+  "Table": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerAppsOneGrid",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerAppsOneGrid",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Table",
+    "Version": "1.0.144"
   },
   "text": {
     "CustomGroupControlTemplateName": "",
