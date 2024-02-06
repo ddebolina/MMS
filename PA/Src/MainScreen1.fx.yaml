@@ -2934,9 +2934,10 @@
                             Items: |-
                                 =Filter('Meeting List',RecordsGallery1.Selected.ID='CommitteeId: ID'.Value)
                             Layout: =Layout.Vertical
-                            LayoutMinHeight: =287
+                            LayoutMinHeight: =100
                             LayoutMinWidth: =320
                             LoadingSpinner: =LoadingSpinner.Data
+                            ShowNavigation: =true
                             TemplatePadding: =0
                             TemplateSize: =80
                             Width: =MeetingsContainer.Width

@@ -1,6 +1,6 @@
 "Screen1 As screen.'autoLayout_HeaderFooter_ver1.0'":
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
-    OnVisible: =Set(notesShowModal, false);Set(pptShowModal, false); Set(docShowModal,false);
+    OnVisible: =Set(notesShowModal, false);Set(pptShowModal, false); Set(docShowModal,false);Set(varAgendaCur, true);Set(varAgendaPub, false)
 
     ScreenContainer2 As groupContainer.verticalAutoLayoutContainer:
         DropShadow: =DropShadow.Light
@@ -2731,7 +2731,7 @@
                     "Gallery4 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
                         BorderColor: =RGBA(245, 245, 245, 1)
                         DelayItemLoading: =true
-                        Height: =376
+                        Height: =353
                         Items: =Notes
                         Layout: =Layout.Vertical
                         LoadingSpinner: =LoadingSpinner.Data
@@ -2904,7 +2904,9 @@
 
             MWorkLoadContainer As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.Light
+                LayoutAlignItems: =LayoutAlignItems.Stretch
                 LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
@@ -2915,18 +2917,37 @@
                 Visible: =If(varCurrentTab="Workload summary",true,false)
                 ZIndex: =8
 
-                Label1_3 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(50, 49, 48, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(161, 159, 157, 1)
-                    FocusedBorderThickness: =4
-                    Font: =Font.'Segoe UI'
-                    Size: =13
-                    Text: ="Workload Summary"
+                Table4 As Table.pcfdataset:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
+                    Items: =WorkloadSummary
+                    LayoutMinHeight: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
+                    LayoutMinWidth: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
+                    onCellValueChange: =false
+                    onFilter: =false
+                    onNavigate: =false
+                    onRowSelect: =false
+                    onSave: =false
+                    Width: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
+                    X: =0
+                    Y: =0
                     ZIndex: =1
+
+                    Title2 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="Title"
+                        FieldName: ="Title"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =1
+                        ZIndex: =26
+
+                    DocumentOriginator1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="DocumentOriginator"
+                        FieldName: ="DocumentOriginator"
+                        FieldType: ="E"
+                        FieldVariantName: ="textualColumn"
+                        Order: =2
+                        ZIndex: =27
 
     ContainerNotes As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
@@ -2936,7 +2957,7 @@
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
-        Visible: =notesShowModal
+        Visible: =notesShowModal 
         Width: =1366
         ZIndex: =2
 

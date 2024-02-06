@@ -23,6 +23,12 @@
           },
           "MeetingDoc": {
             "tableName": "3206a216-6fe7-4144-959c-1628e2aa6a46"
+          },
+          "Versions": {
+            "tableName": "a66c4715-f6ce-4d78-8e66-927662b794f6"
+          },
+          "WorkloadSummary": {
+            "tableName": "407b3e86-504f-4bf3-adcd-090ec5684125"
           }
         }
       }
@@ -30,7 +36,9 @@
     "dataSources": [
       "Meeting List",
       "MeetingDoc",
-      "Agenda"
+      "Agenda",
+      "Versions",
+      "WorkloadSummary"
     ],
     "dependencies": {},
     "dependents": [],
