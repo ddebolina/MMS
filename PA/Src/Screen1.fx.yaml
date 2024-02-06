@@ -1,6 +1,6 @@
 "Screen1 As screen.'autoLayout_HeaderFooter_ver1.0'":
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
-    OnVisible: =Set(notesShowModal, false);Set(pptShowModal, false); Set(docShowModal,false);Set(varAgendaCur, true);Set(varAgendaPub, false)
+    OnVisible: =Set(notesShowModal, false);Set(pptShowModal, false); Set(docShowModal,false);Set(varAgendaCur, true);Set(varAgendaPub, false);ClearCollect(colAgenda, Agenda)
 
     ScreenContainer2 As groupContainer.verticalAutoLayoutContainer:
         DropShadow: =DropShadow.Light
@@ -1389,164 +1389,6 @@
                     RadiusTopRight: =4
                     ZIndex: =1
 
-                    "Gallery2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
-                        BorderColor: =RGBA(245, 245, 245, 1)
-                        DelayItemLoading: =true
-                        Height: =259
-                        Items: =CustomGallerySample
-                        Layout: =Layout.Vertical
-                        LoadingSpinner: =LoadingSpinner.Data
-                        TemplatePadding: =0
-                        TemplateSize: =116
-                        Width: =946
-                        X: =79
-                        Y: =204
-                        ZIndex: =1
-
-                        Title6 As label:
-                            Color: =RGBA(50, 49, 48, 1)
-                            DisabledColor: =RGBA(161, 159, 157, 1)
-                            Font: =Font.'Segoe UI'
-                            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                            Height: =20
-                            OnSelect: =Select(Parent)
-                            PaddingBottom: =0
-                            PaddingLeft: =12
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Text: =ThisItem.SampleHeading
-                            VerticalAlign: =VerticalAlign.Top
-                            Width: =785
-                            X: =91
-                            Y: =(Parent.TemplateHeight - (Self.Size*1.8 + Subtitle5.Size*1.8 + 2 + Body2.Size*1.8)) / 2
-                            ZIndex: =1
-
-                        Subtitle5 As label:
-                            Color: =RGBA(96, 94, 92, 1)
-                            DisabledColor: =RGBA(161, 159, 157, 1)
-                            Font: =Font.'Segoe UI'
-                            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                            Height: =Self.Size * 1.8
-                            OnSelect: =Select(Parent)
-                            PaddingBottom: =0
-                            PaddingLeft: =12
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Size: =12
-                            Text: =ThisItem.SampleText
-                            VerticalAlign: =VerticalAlign.Top
-                            Width: =Title6.Width
-                            X: =Title6.X
-                            Y: =Title6.Y + Title6.Height
-                            ZIndex: =2
-
-                        Body2 As label:
-                            Color: =RGBA(96, 94, 92, 1)
-                            DisabledColor: =RGBA(161, 159, 157, 1)
-                            Font: =Font.'Segoe UI'
-                            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                            Height: =Self.Size * 1.8
-                            OnSelect: =Select(Parent)
-                            PaddingBottom: =0
-                            PaddingLeft: =12
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Size: =12
-                            Text: =ThisItem.SampleText
-                            VerticalAlign: =VerticalAlign.Top
-                            Width: =Title6.Width
-                            X: =Title6.X
-                            Y: =Subtitle5.Y + Subtitle5.Height
-                            ZIndex: =3
-
-                        NextArrow5 As icon.ChevronRight:
-                            AccessibleLabel: =Self.Tooltip
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            Color: =RGBA(166, 166, 166, 1)
-                            DisabledBorderColor: =RGBA(245, 245, 245, 1)
-                            DisabledColor: =RGBA(225, 223, 221, 1)
-                            DisabledFill: =RGBA(0, 0, 0, 0)
-                            FocusedBorderThickness: =4
-                            Height: =50
-                            HoverBorderColor: =RGBA(0, 0, 0, 0)
-                            HoverColor: =RGBA(16, 110, 190, 1)
-                            HoverFill: =RGBA(0, 0, 0, 0)
-                            Icon: =Icon.ChevronRight
-                            OnSelect: =Select(Parent)
-                            PaddingBottom: =16
-                            PaddingLeft: =16
-                            PaddingRight: =16
-                            PaddingTop: =16
-                            PressedBorderColor: =RGBA(0, 0, 0, 0)
-                            PressedColor: =RGBA(16, 110, 190, 1)
-                            PressedFill: =RGBA(0, 0, 0, 0)
-                            Tooltip: ="View item details"
-                            Width: =50
-                            X: =Parent.TemplateWidth - Self.Width - 12
-                            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                            ZIndex: =4
-
-                        Separator5 As rectangle:
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            Fill: =RGBA(255, 255, 255, 1)
-                            Height: =8
-                            OnSelect: =Select(Parent)
-                            Width: =Parent.TemplateWidth
-                            Y: =Parent.TemplateHeight - Self.Height
-                            ZIndex: =5
-
-                        Rectangle6 As rectangle:
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            Fill: =RGBA(0, 120, 212, 1)
-                            Height: =Parent.TemplateHeight - Separator5.Height
-                            OnSelect: =Select(Parent)
-                            Visible: =ThisItem.IsSelected
-                            Width: =4
-                            ZIndex: =6
-
-                        ButtonCanvas3 As Button:
-                            BasePaletteColor: =
-                            DisplayMode: =DisplayMode.Edit
-                            FontColor: =
-                            Height: =32
-                            Text: ="+"
-                            Width: =34
-                            X: =16
-                            Y: =42
-                            ZIndex: =7
-
-                        ButtonCanvas3_1 As Button:
-                            BasePaletteColor: =
-                            DisplayMode: =DisplayMode.Edit
-                            FontColor: =
-                            Height: =32
-                            Text: =" "
-                            Width: =34
-                            X: =57
-                            Y: =42
-                            ZIndex: =8
-
-                        Icon1 As icon.Edit:
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            Color: =RGBA(255, 255, 255, 1)
-                            DisabledBorderColor: =RGBA(245, 245, 245, 1)
-                            DisabledColor: =RGBA(225, 223, 221, 1)
-                            DisabledFill: =RGBA(0, 0, 0, 0)
-                            FocusedBorderThickness: =4
-                            Height: =20
-                            HoverBorderColor: =RGBA(0, 0, 0, 0)
-                            HoverColor: =RGBA(16, 110, 190, 1)
-                            HoverFill: =RGBA(0, 0, 0, 0)
-                            Icon: =Icon.Edit
-                            OnSelect: =Select(Parent)
-                            PressedBorderColor: =RGBA(0, 0, 0, 0)
-                            PressedColor: =RGBA(16, 110, 190, 1)
-                            PressedFill: =RGBA(0, 0, 0, 0)
-                            Width: =20
-                            X: =64
-                            Y: =46
-                            ZIndex: =9
-
                     Container10 As groupContainer.manualLayoutContainer:
                         DropShadow: =DropShadow.Regular
                         Height: =224
@@ -2155,6 +1997,200 @@
                         X: =28
                         Y: =103
                         ZIndex: =7
+
+                    Container14 As groupContainer.manualLayoutContainer:
+                        DropShadow: =DropShadow.Light
+                        Height: =312
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =486
+                        X: =540
+                        Y: =182
+                        ZIndex: =9
+
+                        Form9 As form.PowerApps_CoreControls_Form:
+                            BorderColor: =RGBA(245, 245, 245, 1)
+                            DataSource: =Agenda
+                            DefaultMode: =FormMode.New
+                            Height: =297
+                            Item: =PowerDragDrop1.Selected
+                            NumberOfColumns: =1
+                            UseFluentV9Cards: =true
+                            Width: =486
+                            ZIndex: =1
+
+                            AgendaType_DataCard1 As typedDataCard.fluentV9ComboBoxEditCard:
+                                BorderColor: =RGBA(245, 245, 245, 1)
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="AgendaType"
+                                Default: =ThisItem.AgendaType
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@Agenda],DataSourceInfo.DisplayName,"AgendaType")
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =70
+                                Required: =false
+                                Update: =DataCardValue29.Selected
+                                Width: =486
+                                X: =0
+                                Y: =0
+                                ZIndex: =2
+
+                                DataCardKey29 As Text:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                DataCardValue29 As Combobox.pcfdataset:
+                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    DefaultSelectedItems: =[Parent.Default]
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =32
+                                    Items: =Choices([@Agenda].AgendaType)
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Width: =Parent.Width - 48
+                                    X: =24
+                                    Y: =DataCardKey29.Y + DataCardKey29.Height + 4
+                                    ZIndex: =2
+
+                                ErrorMessage29 As Text:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DataCardValue29.Y + DataCardValue29.Height
+                                    ZIndex: =3
+
+                                StarVisible29 As Text:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =20
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey29.Y
+                                    ZIndex: =4
+
+                            "'Agenda Item_DataCard1' As typedDataCard.fluentV9TextualEditCard":
+                                BorderColor: =RGBA(245, 245, 245, 1)
+                                BorderStyle: =BorderStyle.Solid
+                                DataField: ="AgendaItem"
+                                Default: =ThisItem.'Agenda Item'
+                                DisplayMode: =Parent.DisplayMode
+                                DisplayName: =DataSourceInfo([@Agenda],DataSourceInfo.DisplayName,"AgendaItem")
+                                Fill: =RGBA(0, 0, 0, 0)
+                                Height: =225
+                                MaxLength: =DataSourceInfo([@Agenda], DataSourceInfo.MaxLength, "AgendaItem")
+                                Required: =false
+                                Update: =DataCardValue28.Value
+                                Width: =486
+                                X: =0
+                                Y: =1
+                                ZIndex: =2
+
+                                DataCardKey28 As Text:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =22
+                                    Text: =Parent.DisplayName
+                                    Weight: ='TextCanvas.Weight'.Semibold
+                                    Width: =Parent.Width - 48
+                                    Wrap: =false
+                                    X: =24
+                                    Y: =10
+                                    ZIndex: =1
+
+                                "DataCardValue28 As 'Text input'":
+                                    AccessibleLabel: =Parent.DisplayName
+                                    DisplayMode: =Parent.DisplayMode
+                                    Height: =158
+                                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                                    Required: =Parent.Required
+                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                    Value: =Parent.Default
+                                    Width: =Parent.Width - 48
+                                    X: =24
+                                    Y: =DataCardKey28.Y + DataCardKey28.Height + 4
+                                    ZIndex: =2
+
+                                ErrorMessage28 As Text:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =24
+                                    Y: =DataCardValue28.Y + DataCardValue28.Height
+                                    ZIndex: =3
+
+                                StarVisible28 As Text:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =DataCardKey28.Y
+                                    ZIndex: =4
+
+                    Container14_1 As groupContainer.manualLayoutContainer:
+                        DropShadow: =DropShadow.Light
+                        Height: =312
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        X: =28
+                        Y: =182
+                        ZIndex: =10
+
+                        "PowerDragDrop1_1 As 'Power Drag Drop (1.1.0)'.pcfdataset":
+                            DisplayMode: =DisplayMode.Edit
+                            DropZoneID: =
+                            Height: =305
+                            IdColumn: ="ID"
+                            IsMasterZone: =true
+                            Items: =colAgenda
+                            ItemTemplate: |-
+                                ="<div
+                                	style=""
+                                		box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 2px;
+                                		display:flex;
+                                		flex-direction: column;
+                                		margin: 6px;
+                                        padding: 8px;
+                                        border-radius: 8px;
+                                	"">
+                                	<div>{{AgendaItem}}</div>    
+                                	<button class=""action-clickme"">Click Me</buttom>
+                                </div>"
+                            OnAction: =false
+                            OnDrop: =false
+                            Width: =500
+                            X: =0
+                            Y: =0
+                            ZIndex: =1
+                            ZoneColumn: ="AgendaItem"
+
+                            AgendaItem1_1 As pcfDataField.textualColumn:
+                                FieldDisplayName: ="AgendaItem"
+                                FieldName: ="AgendaItem"
+                                FieldType: ="s"
+                                FieldVariantName: ="textualColumn"
+                                Order: =1
+                                ZIndex: =7
 
             MDocContainer As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.Light
