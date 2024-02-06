@@ -92,6 +92,33 @@
                 Visible: =If(And(MainScreen1.Size = ScreenSize.Small, Or(newMode, editMode, itemSelected)), false, true)
                 ZIndex: =5
 
+                NewRecordButtonBarContainer1 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =44
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =1
+
+                    ButtonCanvas5_3 As Button:
+                        Appearance: ='ButtonCanvas.Appearance'.Outline
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        FontColor: =
+                        Height: =40
+                        LayoutMinHeight: =32
+                        LayoutMinWidth: =96
+                        OnSelect: =Set(comitteeShowModal, true); ResetForm(Form5);
+                        Text: ="+ Add New Committee"
+                        Width: =202
+                        X: =16
+                        Y: =12
+                        ZIndex: =12
+
                 SearchContainer1 As groupContainer.horizontalAutoLayoutContainer:
                     Fill: =RGBA(245, 245, 245, 1)
                     FillPortions: =0
@@ -99,7 +126,7 @@
                     LayoutMinHeight: =100
                     LayoutMinWidth: =0
                     LayoutMode: =LayoutMode.Auto
-                    ZIndex: =6
+                    ZIndex: =2
 
                     SearchInput1 As text:
                         BorderStyle: =BorderStyle.None
@@ -124,9 +151,11 @@
                         Width: =44
                         ZIndex: =8
 
-                NewRecordButtonBarContainer1 As groupContainer.horizontalAutoLayoutContainer:
+                Container11 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0
-                    Height: =44
+                    Height: =60
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
@@ -134,22 +163,21 @@
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
-                    ZIndex: =9
+                    ZIndex: =3
 
-                    ButtonCanvas5_3 As Button:
-                        Appearance: ='ButtonCanvas.Appearance'.Outline
-                        BasePaletteColor: =
+                    ComboboxCanvas1 As Combobox.pcfdataset:
                         DisplayMode: =DisplayMode.Edit
-                        FontColor: =
-                        Height: =40
+                        FontSize: =20
+                        Height: =44
+                        InputTextPlaceholder: ="Select Directorate"
+                        Items: =Choices([@Committee].Directorate)
                         LayoutMinHeight: =32
-                        LayoutMinWidth: =96
-                        OnSelect: =Set(comitteeShowModal, true); ResetForm(Form5);
-                        Text: ="+ Add New Committee"
-                        Width: =202
-                        X: =16
-                        Y: =12
-                        ZIndex: =12
+                        LayoutMinWidth: =320
+                        SelectMultiple: =true
+                        Width: =360
+                        X: =0
+                        Y: =0
+                        ZIndex: =1
 
                 RecordsListSeparator1 As rectangle:
                     AlignInContainer: =AlignInContainer.Stretch
@@ -163,7 +191,7 @@
                     HoverFill: =RGBA(0, 120, 212, 1)
                     LayoutMinWidth: =200
                     PressedFill: =RGBA(0, 120, 212, 1)
-                    ZIndex: =12
+                    ZIndex: =4
 
                 "RecordsGallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
                     BorderColor: =RGBA(245, 245, 245, 1)
@@ -180,7 +208,7 @@
                     TemplateFill: =If(Self.IsSelected, RGBA(230, 230, 230, 1), RGBA(0, 0, 0, 0))
                     TemplatePadding: =0
                     TemplateSize: =104
-                    ZIndex: =13
+                    ZIndex: =5
 
                     Title1 As label:
                         Color: =RGBA(50, 49, 48, 1)

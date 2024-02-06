@@ -153,7 +153,9 @@ Screen2 As screen:
             ZIndex: =6
 
     ButtonCanvas7 As Button:
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        FontColor: =
         Height: =32
         OnSelect: =ClearCollect(colAgenda, Agenda)
         Width: =96

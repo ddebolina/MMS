@@ -9,6 +9,7 @@
       "IdentifierType": 0
     }
   ],
+  "dataSources": {},
   "instanceUrl": "https://org1ddb440e.crm4.dynamics.com/",
   "state": "Configured",
   "webApiVersion": "v9.0"
