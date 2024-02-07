@@ -38003,7 +38003,14 @@
         "Width",
         "Height",
         "DisplayMode",
-        "OnSelectLogo",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "OnSelectLogo",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ZIndex",
         {
           "AFDDataSourceName": "",
@@ -38150,7 +38157,7 @@
         {
           "Category": "Behavior",
           "PropertyName": "OnSelectLogo",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         }
       ],
       "StyleName": "",

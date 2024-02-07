@@ -1,0 +1,23 @@
+"'552a3daf-212e-4c5d-a095-a3d1044d3f8a' As TestSuite":
+    Description: =""
+    DisplayName: ="Suite"
+
+    "'014fb444-ae17-4f61-99a3-e89e3bfa1db3' As TestCase":
+        Description: ="Create a new committee"
+        DisplayName: ="Case"
+
+        Step1 As TestStep:
+            Description: ="Set 'DataCardValue62'.Text to ""test1"""
+            Screen: =MainScreen1
+            Value: =SetProperty('DataCardValue62'.Text, "test1")
+
+        Step2 As TestStep:
+            Description: ="Set 'DataCardValue63'.Text to ""test3"""
+            Screen: =MainScreen1
+            Value: =SetProperty('DataCardValue63'.Text, "test3")
+
+        Step3 As TestStep:
+            Description: ="Set 'DataCardValue64'.Text to ""1234"""
+            Screen: =MainScreen1
+            Value: =SetProperty('DataCardValue64'.Text, "1234")
+

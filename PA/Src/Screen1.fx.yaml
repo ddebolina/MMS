@@ -36,7 +36,7 @@
                 LayoutMinHeight: =75
                 LayoutMinWidth: =Parent.Width
                 Logo: ='Frame 9'
-                OnSelectLogo: =false
+                OnSelectLogo: =true
                 Style: ='Header.Style'.Neutral
                 Title: ="Meeting Management System"
                 TitleFontSize: =28

@@ -35,7 +35,7 @@
                 LayoutMinHeight: =75
                 LayoutMinWidth: =Parent.Width
                 Logo: ='Frame 9'
-                OnSelectLogo: =false
+                OnSelectLogo: =true
                 Style: ='Header.Style'.Neutral
                 Title: ="Meeting Management System"
                 TitleFontSize: =28
@@ -183,7 +183,7 @@
                     Default: =CurrentItem
                     DelayItemLoading: =true
                     Fill: =RGBA(250, 250, 250, 1)
-                    Items: =Search([@Committee], SearchInput1.Text, "Title", "Title")
+                    Items: =Filter(Committee, IsBlank(ComboboxCanvas1.Selected.Value) || Directorate.Value in ComboboxCanvas1.Selected.Value)
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =300
                     LayoutMinWidth: =0
