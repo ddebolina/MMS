@@ -18,6 +18,9 @@
           "Agenda": {
             "tableName": "ff522e3a-05d5-4d40-b287-8abe048e17fe"
           },
+          "AgendaDocuments": {
+            "tableName": "5fd36a95-2513-4b0a-b59c-e655c817db37"
+          },
           "Meeting List": {
             "tableName": "03900c8b-4389-427b-8597-2267d7f27532"
           },
@@ -38,7 +41,8 @@
       "MeetingDoc",
       "Agenda",
       "Versions",
-      "WorkloadSummary"
+      "WorkloadSummary",
+      "AgendaDocuments"
     ],
     "dependencies": {},
     "dependents": [],
