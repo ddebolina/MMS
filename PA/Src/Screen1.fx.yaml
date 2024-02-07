@@ -2186,7 +2186,7 @@
                                         </div>
                                         
                                         <div class=""column"" style=""flex-grow: 10"">{{AgendaItem}}</div>
-                                        <div class=""column"" style=""flex-grow: 1"">{{Title}}</div>
+                                        <div class=""column"" style=""flex-grow: 1"">{{Name}}</div>
                                       </div>  "
                             OnAction: =false
                             OnDrop: =false
