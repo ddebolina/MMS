@@ -4322,6 +4322,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Screen1.ScreenContainer2.MainContainer2.MAgendaContainer.Container6.Container14.ButtonCanvas8.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen1.ScreenContainer2.MainContainer2.MAgendaContainer.Container6.Container14.ButtonCanvas8.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen1",
+                "type": "Screen1.ScreenContainer2.MainContainer2.MAgendaContainer.Container6.Container14.ButtonCanvas8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Screen1.OnVisible"
                 }
               ],

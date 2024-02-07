@@ -2153,6 +2153,24 @@
                                     Y: =DataCardKey28.Y
                                     ZIndex: =4
 
+                        ButtonCanvas8 As Button:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =32
+                            Text: ="Save"
+                            Width: =96
+                            X: =152
+                            Y: =265
+                            ZIndex: =2
+
+                        LinkCanvas2 As Link:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =32
+                            Text: ="Add Document Placeholder"
+                            Width: =320
+                            X: =25
+                            Y: =228
+                            ZIndex: =3
+
                     Container14_1 As groupContainer.manualLayoutContainer:
                         DropShadow: =DropShadow.Light
                         Height: =312
