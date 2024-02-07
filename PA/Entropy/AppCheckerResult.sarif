@@ -4352,6 +4352,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Screen1.ScreenContainer2.MainContainer2.MVersionsContainer.Table3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen1.ScreenContainer2.MainContainer2.MVersionsContainer.Table3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen1",
+                "type": "Screen1.ScreenContainer2.MainContainer2.MVersionsContainer.Table3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Screen1.ContainerDocPlaceholder.Container9_5.ButtonCanvas6_10.AccessibleLabel"
                 }
               ],
