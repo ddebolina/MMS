@@ -5226,6 +5226,7 @@
             Form10 As form.PowerApps_CoreControls_Form:
                 BorderColor: =RGBA(245, 245, 245, 1)
                 DataSource: =AgendaDocuments
+                DefaultMode: =FormMode.New
                 Height: =306
                 NumberOfColumns: =2
                 UseFluentV9Cards: =true
