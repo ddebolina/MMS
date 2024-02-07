@@ -30,21 +30,23 @@
             LayoutMode: =LayoutMode.Auto
             ZIndex: =2
 
-            Image1_1 As image:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledFill: =RGBA(0, 0, 0, 0)
-                FocusedBorderThickness: =4
-                Height: =70
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverFill: =RGBA(0, 0, 0, 0)
-                Image: ='Frame 9'
-                PressedBorderColor: =RGBA(0, 0, 0, 0)
-                PressedFill: =RGBA(0, 0, 0, 0)
-                Width: =70
-                ZIndex: =1
+            Header1 As Header:
+                DisplayMode: =DisplayMode.Edit
+                Height: =75
+                LayoutMinHeight: =75
+                LayoutMinWidth: =Parent.Width
+                Logo: ='Frame 9'
+                OnSelectLogo: =false
+                Style: ='Header.Style'.Neutral
+                Title: ="Meeting Management System"
+                TitleFontSize: =28
+                UserEmail: =User().Email
+                UserImage: =User().Image
+                UserName: =User().FullName
+                Width: =Parent.Width
+                X: =0
+                Y: =0
+                ZIndex: =2
 
         MainContainer2 As groupContainer.verticalAutoLayoutContainer:
             DropShadow: =DropShadow.Light

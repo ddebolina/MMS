@@ -29,38 +29,23 @@
             RadiusTopRight: =4
             ZIndex: =2
 
-            Image1 As image:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledFill: =RGBA(0, 0, 0, 0)
-                FocusedBorderThickness: =4
-                Height: =70
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverFill: =RGBA(0, 0, 0, 0)
-                Image: ='Frame 9'
-                PressedBorderColor: =RGBA(0, 0, 0, 0)
-                PressedFill: =RGBA(0, 0, 0, 0)
-                Width: =70
-                ZIndex: =4
-
-            Label9 As label:
-                Align: =Align.Center
-                AlignInContainer: =AlignInContainer.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(50, 49, 48, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(161, 159, 157, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Bold
-                Size: =20
-                Text: ="Meeting Management System"
-                Width: =500
-                ZIndex: =5
+            Header2 As Header:
+                DisplayMode: =DisplayMode.Edit
+                Height: =75
+                LayoutMinHeight: =75
+                LayoutMinWidth: =Parent.Width
+                Logo: ='Frame 9'
+                OnSelectLogo: =false
+                Style: ='Header.Style'.Neutral
+                Title: ="Meeting Management System"
+                TitleFontSize: =28
+                UserEmail: =User().Email
+                UserImage: =User().Image
+                UserName: =User().FullName
+                Width: =Parent.Width
+                X: =0
+                Y: =0
+                ZIndex: =1
 
         BodyContainer1 As groupContainer.horizontalAutoLayoutContainer:
             LayoutGap: =16
