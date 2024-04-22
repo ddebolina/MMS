@@ -179,7 +179,9 @@ Screen2 As screen:
         ZIndex: =3
 
     Table1 As Table.pcfdataset:
+        DisableChildItemsEditing: ="no"
         DisplayMode: =DisplayMode.Edit
+        EnableColumnMoving: ="no"
         Height: =277
         Items: =PowerDragDrop1.CurrentItems
         onCellValueChange: =false
@@ -187,6 +189,7 @@ Screen2 As screen:
         onNavigate: =false
         onRowSelect: =false
         onSave: =false
+        OnSelect: =false
         ReflowBehavior: ='PowerAppsOneGrid.ReflowBehavior'.GridOnly
         Width: =1215
         X: =35

@@ -9,15 +9,15 @@
         Step1 As TestStep:
             Description: ="Set 'DataCardValue62'.Text to ""test1"""
             Screen: =MainScreen1
-            Value: =SetProperty('DataCardValue62'.Text, "test1")
+            Value: =SetProperty(DataCardValue62.Text, "test1")
 
         Step2 As TestStep:
             Description: ="Set 'DataCardValue63'.Text to ""test3"""
             Screen: =MainScreen1
-            Value: =SetProperty('DataCardValue63'.Text, "test3")
+            Value: =SetProperty(DataCardValue63.Text, "test3")
 
         Step3 As TestStep:
             Description: ="Set 'DataCardValue64'.Text to ""1234"""
             Screen: =MainScreen1
-            Value: =SetProperty('DataCardValue64'.Text, "1234")
+            Value: =SetProperty(DataCardValue64.Text, "1234")
 

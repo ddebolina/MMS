@@ -102,7 +102,47 @@
       ],
       "From": "1.0.130",
       "To": "1.0.131"
+    },
+    {
+      "Action": [
+        {
+          "Name": "OnSelect",
+          "Type": "add"
+        }
+      ],
+      "From": "1.0.150",
+      "To": "1.0.151"
+    },
+    {
+      "Action": [
+        {
+          "Name": "EnableColumnMoving",
+          "Type": "add"
+        }
+      ],
+      "From": "1.0.162",
+      "To": "1.0.163"
+    },
+    {
+      "Action": [
+        {
+          "Name": "DisableChildItemsEditing",
+          "Type": "add"
+        }
+      ],
+      "From": "1.0.166",
+      "To": "1.0.167"
+    },
+    {
+      "Action": [
+        {
+          "Name": "DefaultSelectedItems",
+          "Type": "remove"
+        }
+      ],
+      "From": "1.0.183",
+      "To": "1.0.184"
     }
   ],
-  "Version": "1.0.144"
+  "Version": "1.0.186"
 }

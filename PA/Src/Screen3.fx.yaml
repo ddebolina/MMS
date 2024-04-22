@@ -2,7 +2,9 @@ Screen3 As screen:
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
     Table2 As Table.pcfdataset:
+        DisableChildItemsEditing: ="no"
         DisplayMode: =DisplayMode.Edit
+        EnableColumnMoving: ="no"
         Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
         Items: =Committee
         onCellValueChange: =false
@@ -10,6 +12,7 @@ Screen3 As screen:
         onNavigate: =false
         onRowSelect: =false
         onSave: =false
+        OnSelect: =false
         Width: =1322
         X: =20
         Y: =221

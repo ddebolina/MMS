@@ -38451,7 +38451,7 @@
       "MetaDataIDKey": "%EditIconButton.ID%",
       "Name": "EditIconButton1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -53599,7 +53599,9 @@
           "InvariantPropertyName": "TitleFontSize",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "BasePaletteColor",
+        "FontColor"
       ],
       "DynamicProperties": [
         {
@@ -53693,6 +53695,16 @@
         {
           "Category": "Data",
           "PropertyName": "TitleFontSize",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "BasePaletteColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "FontColor",
           "RuleProviderType": "Unknown"
         },
         {
@@ -57606,7 +57618,7 @@
       "MetaDataIDKey": "%ResetFormButton.ID%",
       "Name": "ResetFormButton1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

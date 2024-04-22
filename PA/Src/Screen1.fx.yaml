@@ -31,7 +31,9 @@
             ZIndex: =2
 
             Header1 As Header:
+                BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
+                FontColor: =
                 Height: =75
                 LayoutMinHeight: =75
                 LayoutMinWidth: =Parent.Width
@@ -337,10 +339,10 @@
                         DataField: ="Title"
                         Default: =ThisItem.Title
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,"Title")
+                        DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,Title)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
-                        MaxLength: =DataSourceInfo([@'Meeting List'], DataSourceInfo.MaxLength, "Title")
+                        MaxLength: =DataSourceInfo([@'Meeting List'], DataSourceInfo.MaxLength, Title)
                         Required: =true
                         Update: =DataCardValue67.Text
                         Width: =444
@@ -452,7 +454,7 @@
                         DataField: ="UsesAgenda"
                         Default: =ThisItem.'Uses Agenda'
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,"UsesAgenda")
+                        DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,'Uses Agenda')
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -557,7 +559,7 @@
                         DataField: ="DoubleSession"
                         Default: =ThisItem.'Double Session'
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,"DoubleSession")
+                        DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,'Double Session')
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -662,7 +664,7 @@
                         DataField: ="DefaultAgendaLanguage"
                         Default: =ThisItem.'Default Agenda Language'
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,"DefaultAgendaLanguage")
+                        DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,'Default Agenda Language')
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -781,7 +783,7 @@
                         DataField: ="AgendaManager"
                         Default: =ThisItem.'Agenda Manager'
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,"AgendaManager")
+                        DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,'Agenda Manager')
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -900,7 +902,7 @@
                         DataField: ="AgendaSub_x002d_Editor"
                         Default: =ThisItem.'Agenda Sub-Editor'
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,"AgendaSub_x002d_Editor")
+                        DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,'Agenda Sub-Editor')
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -1019,7 +1021,7 @@
                         DataField: ="StartDate"
                         Default: =ThisItem.'Start Date'
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,"StartDate")
+                        DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,'Start Date')
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -1129,7 +1131,7 @@
                         DataField: ="EndDate"
                         Default: =ThisItem.'End Date'
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,"EndDate")
+                        DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,'End Date')
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -1239,7 +1241,7 @@
                         DataField: ="Translations"
                         Default: =ThisItem.Translations
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,"Translations")
+                        DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,Translations)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -1419,7 +1421,7 @@
                                 DataField: ="Translations"
                                 Default: =ThisItem.Translations
                                 DisplayMode: =Parent.DisplayMode
-                                DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,"Translations")
+                                DisplayName: =DataSourceInfo([@'Meeting List'],DataSourceInfo.DisplayName,Translations)
                                 Fill: =RGBA(0, 0, 0, 0)
                                 Height: =85
                                 Required: =false
@@ -1954,7 +1956,7 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Height: =63
+                        Height: =46
                         HintText: ="Agenda Title"
                         HoverBorderColor: =RGBA(16, 110, 190, 1)
                         HoverColor: =RGBA(50, 49, 48, 1)
@@ -1969,7 +1971,7 @@
                         Size: =13
                         Width: =998
                         X: =28
-                        Y: =24
+                        Y: =14
                         ZIndex: =6
 
                     TextInput1_1 As text:
@@ -1982,7 +1984,7 @@
                         DisabledFill: =RGBA(242, 242, 241, 0)
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
-                        Height: =63
+                        Height: =33
                         HintText: ="Subtitle"
                         HoverBorderColor: =RGBA(16, 110, 190, 1)
                         HoverColor: =RGBA(50, 49, 48, 1)
@@ -1997,19 +1999,19 @@
                         Size: =13
                         Width: =998
                         X: =28
-                        Y: =103
+                        Y: =70
                         ZIndex: =7
 
                     Container14 As groupContainer.manualLayoutContainer:
                         DropShadow: =DropShadow.Light
-                        Height: =312
+                        Height: =391
                         RadiusBottomLeft: =4
                         RadiusBottomRight: =4
                         RadiusTopLeft: =4
                         RadiusTopRight: =4
                         Width: =400
                         X: =640
-                        Y: =182
+                        Y: =103
                         ZIndex: =9
 
                         Form9 As form.PowerApps_CoreControls_Form:
@@ -2029,7 +2031,7 @@
                                 DataField: ="AgendaType"
                                 Default: =ThisItem.AgendaType
                                 DisplayMode: =Parent.DisplayMode
-                                DisplayName: =DataSourceInfo([@Agenda],DataSourceInfo.DisplayName,"AgendaType")
+                                DisplayName: =DataSourceInfo([@Agenda],DataSourceInfo.DisplayName,AgendaType)
                                 Fill: =RGBA(0, 0, 0, 0)
                                 Height: =70
                                 Required: =false
@@ -2093,12 +2095,12 @@
                                 DataField: ="AgendaItem"
                                 Default: =ThisItem.'Agenda Item'
                                 DisplayMode: =Parent.DisplayMode
-                                DisplayName: =DataSourceInfo([@Agenda],DataSourceInfo.DisplayName,"AgendaItem")
+                                DisplayName: =DataSourceInfo([@Agenda],DataSourceInfo.DisplayName,'Agenda Item')
                                 Fill: =RGBA(0, 0, 0, 0)
-                                Height: =164
-                                MaxLength: =DataSourceInfo([@Agenda], DataSourceInfo.MaxLength, "AgendaItem")
+                                Height: =222
+                                MaxLength: =DataSourceInfo([@Agenda], DataSourceInfo.MaxLength, 'Agenda Item')
                                 Required: =false
-                                Update: =DataCardValue28.Value
+                                Update: =
                                 Width: =400
                                 X: =0
                                 Y: =1
@@ -2116,21 +2118,6 @@
                                     Y: =10
                                     ZIndex: =1
 
-                                "DataCardValue28 As 'Text input'":
-                                    AccessibleLabel: =Parent.DisplayName
-                                    BasePaletteColor: =
-                                    DisplayMode: =Parent.DisplayMode
-                                    FontColor: =
-                                    Height: =112
-                                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                    Required: =Parent.Required
-                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                    Value: =Parent.Default
-                                    Width: =Parent.Width - 48
-                                    X: =24
-                                    Y: =DataCardKey28.Y + DataCardKey28.Height + 4
-                                    ZIndex: =2
-
                                 ErrorMessage28 As Text:
                                     DisplayMode: =DisplayMode.Edit
                                     FontColor: =
@@ -2140,7 +2127,7 @@
                                     Width: =Parent.Width - 48
                                     Wrap: =true
                                     X: =24
-                                    Y: =DataCardValue28.Y + DataCardValue28.Height
+                                    Y: =
                                     ZIndex: =3
 
                                 StarVisible28 As Text:
@@ -2155,17 +2142,29 @@
                                     Y: =DataCardKey28.Y
                                     ZIndex: =4
 
+                                RichTextEditor1 As richTextEditor:
+                                    BorderColor: =RGBA(214, 221, 224, 1)
+                                    Default: ="Enter some <strong>rich text</strong> here."
+                                    Height: =179
+                                    Width: =369
+                                    X: =24
+                                    Y: =32
+                                    ZIndex: =5
+
                         ButtonCanvas8 As Button:
+                            BasePaletteColor: =
                             DisplayMode: =DisplayMode.Edit
+                            FontColor: =
                             Height: =32
                             Text: ="Save"
                             Width: =96
-                            X: =152
-                            Y: =265
+                            X: =165
+                            Y: =350
                             ZIndex: =2
 
                         ButtonCanvas9 As Button:
                             Appearance: ='ButtonCanvas.Appearance'.Subtle
+                            BasePaletteColor: =
                             DisplayMode: =DisplayMode.Edit
                             FontColor: =RGBA(15, 108, 189, 1)
                             FontUnderline: =true
@@ -2173,26 +2172,26 @@
                             OnSelect: =Set(docShowPlaceholder, true)
                             Text: ="Add Document Placeholder"
                             Width: =219
-                            X: =29
-                            Y: =228
+                            X: =31
+                            Y: =318
                             ZIndex: =3
 
                     Container14_1 As groupContainer.manualLayoutContainer:
                         DropShadow: =DropShadow.Light
-                        Height: =312
+                        Height: =377
                         RadiusBottomLeft: =4
                         RadiusBottomRight: =4
                         RadiusTopLeft: =4
                         RadiusTopRight: =4
                         Width: =600
                         X: =28
-                        Y: =182
+                        Y: =117
                         ZIndex: =10
 
                         "PowerDragDrop1_1 As 'Power Drag Drop (1.1.0)'.pcfdataset":
                             DisplayMode: =DisplayMode.Edit
                             DropZoneID: =
-                            Height: =305
+                            Height: =377
                             IdColumn: ="ID"
                             IsMasterZone: =true
                             Items: =colAgenda
@@ -2520,7 +2519,9 @@
                 ZIndex: =5
 
                 Table3 As Table.pcfdataset:
+                    DisableChildItemsEditing: ="no"
                     DisplayMode: =DisplayMode.Edit
+                    EnableColumnMoving: ="no"
                     Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
                     Items: =Versions
                     LayoutMinHeight: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
@@ -2530,6 +2531,7 @@
                     onNavigate: =false
                     onRowSelect: =false
                     onSave: =false
+                    OnSelect: =false
                     Width: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
                     X: =0
                     Y: =0
@@ -3040,7 +3042,9 @@
                 ZIndex: =8
 
                 Table4 As Table.pcfdataset:
+                    DisableChildItemsEditing: ="no"
                     DisplayMode: =DisplayMode.Edit
+                    EnableColumnMoving: ="no"
                     Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
                     Items: =WorkloadSummary
                     LayoutMinHeight: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
@@ -3050,6 +3054,7 @@
                     onNavigate: =false
                     onRowSelect: =false
                     onSave: =false
+                    OnSelect: =false
                     Width: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
                     X: =0
                     Y: =0
@@ -3113,10 +3118,10 @@
                     DataField: ="Notes"
                     Default: =ThisItem.Notes
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@Notes],DataSourceInfo.DisplayName,"Notes")
+                    DisplayName: =DataSourceInfo([@Notes],DataSourceInfo.DisplayName,Notes)
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =327
-                    MaxLength: =DataSourceInfo([@Notes], DataSourceInfo.MaxLength, "Notes")
+                    MaxLength: =DataSourceInfo([@Notes], DataSourceInfo.MaxLength, Notes)
                     Required: =false
                     Update: =DataCardValue82.Text
                     Width: =800
@@ -3290,10 +3295,10 @@
                     DataField: ="Title"
                     Default: =ThisItem.Title
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@Presentation],DataSourceInfo.DisplayName,"Title")
+                    DisplayName: =DataSourceInfo([@Presentation],DataSourceInfo.DisplayName,Title)
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
-                    MaxLength: =DataSourceInfo([@Presentation], DataSourceInfo.MaxLength, "Title")
+                    MaxLength: =DataSourceInfo([@Presentation], DataSourceInfo.MaxLength, Title)
                     Required: =false
                     Update: =DataCardValue20.Text
                     Width: =447
@@ -3405,7 +3410,7 @@
                     DataField: ="AutoPublish"
                     Default: =ThisItem.'Auto Publish'
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@Presentation],DataSourceInfo.DisplayName,"AutoPublish")
+                    DisplayName: =DataSourceInfo([@Presentation],DataSourceInfo.DisplayName,'Auto Publish')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
@@ -3512,7 +3517,7 @@
                     DataField: ="WCOWebsitePresentationTab"
                     Default: =ThisItem.'WCO Website Presentation Tab'
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@Presentation],DataSourceInfo.DisplayName,"WCOWebsitePresentationTab")
+                    DisplayName: =DataSourceInfo([@Presentation],DataSourceInfo.DisplayName,'WCO Website Presentation Tab')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
@@ -3619,7 +3624,7 @@
                     DataField: ="DocumentOriginator"
                     Default: =ThisItem.'Document Originator'
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@Presentation],DataSourceInfo.DisplayName,"DocumentOriginator")
+                    DisplayName: =DataSourceInfo([@Presentation],DataSourceInfo.DisplayName,'Document Originator')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
@@ -3738,7 +3743,7 @@
                     DataField: ="DocumentLanguage"
                     Default: =ThisItem.'Document Language'
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@Presentation],DataSourceInfo.DisplayName,"DocumentLanguage")
+                    DisplayName: =DataSourceInfo([@Presentation],DataSourceInfo.DisplayName,'Document Language')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
@@ -3857,7 +3862,7 @@
                     DataField: ="{Attachments}"
                     Default: =ThisItem.Attachments
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@Presentation],DataSourceInfo.DisplayName,"{Attachments}")
+                    DisplayName: =DataSourceInfo([@Presentation],DataSourceInfo.DisplayName,Attachments)
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
@@ -4058,7 +4063,7 @@
                     DataField: ="Originator"
                     Default: =ThisItem.Originator
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,"Originator")
+                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,Originator)
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
@@ -4177,7 +4182,7 @@
                     DataField: ="DocType"
                     Default: =ThisItem.DocType
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,"DocType")
+                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,DocType)
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
@@ -4296,7 +4301,7 @@
                     DataField: ="Language"
                     Default: =ThisItem.Language
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,"Language")
+                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,Language)
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
@@ -4415,10 +4420,10 @@
                     DataField: ="Title"
                     Default: =ThisItem.Title
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,"Title")
+                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,Title)
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
-                    MaxLength: =DataSourceInfo([@MeetingDoc], DataSourceInfo.MaxLength, "Title")
+                    MaxLength: =DataSourceInfo([@MeetingDoc], DataSourceInfo.MaxLength, Title)
                     Required: =false
                     Update: =DataCardValue51.Text
                     Width: =502
@@ -4530,10 +4535,10 @@
                     DataField: ="ApprovalTimeLimit"
                     Default: =ThisItem.'Approval Time Limit'
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,"ApprovalTimeLimit")
+                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,'Approval Time Limit')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
-                    MaxLength: =DataSourceInfo([@MeetingDoc], DataSourceInfo.MaxLength, "ApprovalTimeLimit")
+                    MaxLength: =DataSourceInfo([@MeetingDoc], DataSourceInfo.MaxLength, 'Approval Time Limit')
                     Required: =false
                     Update: =DataCardValue55.Text
                     Width: =502
@@ -4645,7 +4650,7 @@
                     DataField: ="Approver1"
                     Default: =ThisItem.'Approver 1'
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,"Approver1")
+                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,'Approver 1')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
@@ -4764,10 +4769,10 @@
                     DataField: ="ContentTypeLimit"
                     Default: =ThisItem.'Content Type Limit'
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,"ContentTypeLimit")
+                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,'Content Type Limit')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
-                    MaxLength: =DataSourceInfo([@MeetingDoc], DataSourceInfo.MaxLength, "ContentTypeLimit")
+                    MaxLength: =DataSourceInfo([@MeetingDoc], DataSourceInfo.MaxLength, 'Content Type Limit')
                     Required: =false
                     Update: =DataCardValue57.Text
                     Width: =502
@@ -4879,7 +4884,7 @@
                     DataField: ="Approver2"
                     Default: =ThisItem.'Approver 2'
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,"Approver2")
+                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,'Approver 2')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
@@ -4998,10 +5003,10 @@
                     DataField: ="Comment"
                     Default: =ThisItem.Comment
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,"Comment")
+                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,Comment)
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
-                    MaxLength: =DataSourceInfo([@MeetingDoc], DataSourceInfo.MaxLength, "Comment")
+                    MaxLength: =DataSourceInfo([@MeetingDoc], DataSourceInfo.MaxLength, Comment)
                     Required: =false
                     Update: =DataCardValue59.Text
                     Width: =502
@@ -5113,7 +5118,7 @@
                     DataField: ="Approver3"
                     Default: =ThisItem.'Approver 3'
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,"Approver3")
+                    DisplayName: =DataSourceInfo([@MeetingDoc],DataSourceInfo.DisplayName,'Approver 3')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
@@ -5293,10 +5298,10 @@
                     DataField: ="Title"
                     Default: =ThisItem.Title
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@AgendaDocuments],DataSourceInfo.DisplayName,"Title")
+                    DisplayName: =DataSourceInfo([@AgendaDocuments],DataSourceInfo.DisplayName,Title)
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
-                    MaxLength: =DataSourceInfo([@AgendaDocuments], DataSourceInfo.MaxLength, "Title")
+                    MaxLength: =DataSourceInfo([@AgendaDocuments], DataSourceInfo.MaxLength, Title)
                     Required: =false
                     Update: =DataCardValue26.Value
                     Width: =468
@@ -5306,6 +5311,7 @@
 
                     DataCardKey26 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        FontColor: =
                         Height: =22
                         Text: =Parent.DisplayName
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -5317,7 +5323,9 @@
 
                     "DataCardValue26 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        FontColor: =
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -5330,6 +5338,7 @@
 
                     ErrorMessage26 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        FontColor: =
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -5342,6 +5351,7 @@
                     StarVisible26 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        FontColor: =
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -5356,7 +5366,7 @@
                     DataField: ="Originator"
                     Default: =ThisItem.' Originator'
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@AgendaDocuments],DataSourceInfo.DisplayName,"Originator")
+                    DisplayName: =DataSourceInfo([@AgendaDocuments],DataSourceInfo.DisplayName,' Originator')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
                     Required: =false
@@ -5368,6 +5378,7 @@
 
                     DataCardKey27 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        FontColor: =
                         Height: =22
                         Text: =Parent.DisplayName
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -5382,7 +5393,7 @@
                         DefaultSelectedItems: =[Parent.Default]
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
-                        Items: =Choices([@AgendaDocuments].Originator)
+                        Items: =Choices([@AgendaDocuments].' Originator')
                         ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                         Width: =Parent.Width - 48
                         X: =24
@@ -5391,6 +5402,7 @@
 
                     ErrorMessage27 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        FontColor: =
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -5403,6 +5415,7 @@
                     StarVisible27 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        FontColor: =
                         Height: =20
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -5411,76 +5424,13 @@
                         Y: =DataCardKey27.Y
                         ZIndex: =4
 
-                "'Reference File_DataCard1' As typedDataCard.fluentV9TextualEditCard":
-                    BorderColor: =RGBA(245, 245, 245, 1)
-                    BorderStyle: =BorderStyle.Solid
-                    DataField: ="ReferenceFile"
-                    Default: =ThisItem.'Reference File'
-                    DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@AgendaDocuments],DataSourceInfo.DisplayName,"ReferenceFile")
-                    Fill: =RGBA(0, 0, 0, 0)
-                    Height: =70
-                    MaxLength: =DataSourceInfo([@AgendaDocuments], DataSourceInfo.MaxLength, "ReferenceFile")
-                    Required: =false
-                    Update: =DataCardValue31.Value
-                    Width: =468
-                    X: =1
-                    Y: =1
-                    ZIndex: =5
-
-                    DataCardKey31 As Text:
-                        DisplayMode: =DisplayMode.Edit
-                        Height: =22
-                        Text: =Parent.DisplayName
-                        Weight: ='TextCanvas.Weight'.Semibold
-                        Width: =Parent.Width - 48
-                        Wrap: =false
-                        X: =24
-                        Y: =10
-                        ZIndex: =1
-
-                    "DataCardValue31 As 'Text input'":
-                        AccessibleLabel: =Parent.DisplayName
-                        DisplayMode: =Parent.DisplayMode
-                        Height: =32
-                        Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                        Required: =Parent.Required
-                        ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                        Value: =Parent.Default
-                        Width: =Parent.Width - 48
-                        X: =24
-                        Y: =DataCardKey31.Y + DataCardKey31.Height + 4
-                        ZIndex: =2
-
-                    ErrorMessage31 As Text:
-                        DisplayMode: =DisplayMode.Edit
-                        Height: =30
-                        Text: =Parent.Error
-                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =Parent.Width - 48
-                        Wrap: =true
-                        X: =24
-                        Y: =DataCardValue31.Y + DataCardValue31.Height
-                        ZIndex: =3
-
-                    StarVisible31 As Text:
-                        Align: ='TextCanvas.Align'.Center
-                        DisplayMode: =DisplayMode.Edit
-                        Height: =30
-                        Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =30
-                        X: =0
-                        Y: =DataCardKey31.Y
-                        ZIndex: =4
-
                 Language_DataCard1 As typedDataCard.fluentV9ComboBoxEditCard:
                     BorderColor: =RGBA(245, 245, 245, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Language"
                     Default: =ThisItem.Language
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@AgendaDocuments],DataSourceInfo.DisplayName,"Language")
+                    DisplayName: =DataSourceInfo([@AgendaDocuments],DataSourceInfo.DisplayName,Language)
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
                     Required: =false
@@ -5492,6 +5442,7 @@
 
                     DataCardKey30 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        FontColor: =
                         Height: =22
                         Text: =Parent.DisplayName
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -5515,6 +5466,7 @@
 
                     ErrorMessage30 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        FontColor: =
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -5527,6 +5479,7 @@
                     StarVisible30 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        FontColor: =
                         Height: =20
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -5535,16 +5488,84 @@
                         Y: =DataCardKey30.Y
                         ZIndex: =4
 
+                "'Reference File_DataCard1' As typedDataCard.fluentV9TextualEditCard":
+                    BorderColor: =RGBA(245, 245, 245, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ReferenceFile"
+                    Default: =ThisItem.'Reference File'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@AgendaDocuments],DataSourceInfo.DisplayName,'Reference File')
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    MaxLength: =DataSourceInfo([@AgendaDocuments], DataSourceInfo.MaxLength, 'Reference File')
+                    Required: =false
+                    Update: =DataCardValue31.Value
+                    Width: =468
+                    X: =1
+                    Y: =1
+                    ZIndex: =5
+
+                    DataCardKey31 As Text:
+                        DisplayMode: =DisplayMode.Edit
+                        FontColor: =
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Weight: ='TextCanvas.Weight'.Semibold
+                        Width: =Parent.Width - 48
+                        Wrap: =false
+                        X: =24
+                        Y: =10
+                        ZIndex: =1
+
+                    "DataCardValue31 As 'Text input'":
+                        AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
+                        DisplayMode: =Parent.DisplayMode
+                        FontColor: =
+                        Height: =32
+                        Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                        Required: =Parent.Required
+                        ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                        Value: =Parent.Default
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey31.Y + DataCardKey31.Height + 4
+                        ZIndex: =2
+
+                    ErrorMessage31 As Text:
+                        DisplayMode: =DisplayMode.Edit
+                        FontColor: =
+                        Height: =30
+                        Text: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue31.Y + DataCardValue31.Height
+                        ZIndex: =3
+
+                    StarVisible31 As Text:
+                        Align: ='TextCanvas.Align'.Center
+                        DisplayMode: =DisplayMode.Edit
+                        FontColor: =
+                        Height: =30
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey31.Y
+                        ZIndex: =4
+
                 "'Existing Document Number_DataCard1' As typedDataCard.fluentV9TextualEditCard":
                     BorderColor: =RGBA(245, 245, 245, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="ExistingDocumentNumber"
                     Default: =ThisItem.'Existing Document Number'
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@AgendaDocuments],DataSourceInfo.DisplayName,"ExistingDocumentNumber")
+                    DisplayName: =DataSourceInfo([@AgendaDocuments],DataSourceInfo.DisplayName,'Existing Document Number')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
-                    MaxLength: =DataSourceInfo([@AgendaDocuments], DataSourceInfo.MaxLength, "ExistingDocumentNumber")
+                    MaxLength: =DataSourceInfo([@AgendaDocuments], DataSourceInfo.MaxLength, 'Existing Document Number')
                     Required: =false
                     Update: =DataCardValue32.Value
                     Width: =468
@@ -5554,6 +5575,7 @@
 
                     DataCardKey32 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        FontColor: =
                         Height: =22
                         Text: =Parent.DisplayName
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -5565,7 +5587,9 @@
 
                     "DataCardValue32 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        FontColor: =
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -5578,6 +5602,7 @@
 
                     ErrorMessage32 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        FontColor: =
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -5590,6 +5615,7 @@
                     StarVisible32 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        FontColor: =
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -5604,10 +5630,10 @@
                     DataField: ="Notes"
                     Default: =ThisItem.Notes
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@AgendaDocuments],DataSourceInfo.DisplayName,"Notes")
+                    DisplayName: =DataSourceInfo([@AgendaDocuments],DataSourceInfo.DisplayName,Notes)
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
-                    MaxLength: =DataSourceInfo([@AgendaDocuments], DataSourceInfo.MaxLength, "Notes")
+                    MaxLength: =DataSourceInfo([@AgendaDocuments], DataSourceInfo.MaxLength, Notes)
                     Required: =false
                     Update: =DataCardValue33.Value
                     Width: =468
@@ -5617,6 +5643,7 @@
 
                     DataCardKey33 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        FontColor: =
                         Height: =22
                         Text: =Parent.DisplayName
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -5628,7 +5655,9 @@
 
                     "DataCardValue33 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        FontColor: =
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -5641,6 +5670,7 @@
 
                     ErrorMessage33 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        FontColor: =
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -5653,6 +5683,7 @@
                     StarVisible33 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        FontColor: =
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
