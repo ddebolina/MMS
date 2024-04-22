@@ -1401,8 +1401,8 @@
                         RadiusTopLeft: =8
                         RadiusTopRight: =8
                         Width: =259
-                        X: =1052
-                        Y: =12
+                        X: =1065
+                        Y: =9
                         ZIndex: =4
 
                         Form3 As form:
@@ -1658,7 +1658,7 @@
                         RadiusTopLeft: =8
                         RadiusTopRight: =8
                         Width: =259
-                        X: =1052
+                        X: =1065
                         Y: =247
                         ZIndex: =5
 
@@ -2010,7 +2010,7 @@
                         RadiusTopLeft: =4
                         RadiusTopRight: =4
                         Width: =400
-                        X: =640
+                        X: =655
                         Y: =117
                         ZIndex: =9
 
@@ -2159,7 +2159,7 @@
                             Text: ="Save"
                             Width: =96
                             X: =165
-                            Y: =350
+                            Y: =340
                             ZIndex: =2
 
                         ButtonCanvas9 As Button:
@@ -2173,7 +2173,7 @@
                             Text: ="Add Document Placeholder"
                             Width: =219
                             X: =31
-                            Y: =318
+                            Y: =297
                             ZIndex: =3
 
                     Container14_1 As groupContainer.manualLayoutContainer:
@@ -2183,7 +2183,7 @@
                         RadiusBottomRight: =4
                         RadiusTopLeft: =4
                         RadiusTopRight: =4
-                        Width: =600
+                        Width: =612
                         X: =28
                         Y: =117
                         ZIndex: =10
@@ -2213,7 +2213,7 @@
                                       </div>  "
                             OnAction: =false
                             OnDrop: =false
-                            Width: =600
+                            Width: =611
                             X: =0
                             Y: =0
                             ZIndex: =1
