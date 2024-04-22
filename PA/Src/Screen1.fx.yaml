@@ -2009,8 +2009,8 @@
                         RadiusBottomRight: =4
                         RadiusTopLeft: =4
                         RadiusTopRight: =4
-                        Width: =400
-                        X: =655
+                        Width: =463
+                        X: =592
                         Y: =117
                         ZIndex: =9
 
@@ -2022,7 +2022,7 @@
                             Item: =PowerDragDrop1.Selected
                             NumberOfColumns: =1
                             UseFluentV9Cards: =true
-                            Width: =400
+                            Width: =462
                             ZIndex: =1
 
                             AgendaType_DataCard1 As typedDataCard.fluentV9ComboBoxEditCard:
@@ -2036,7 +2036,7 @@
                                 Height: =70
                                 Required: =false
                                 Update: =DataCardValue29.Selected
-                                Width: =400
+                                Width: =462
                                 X: =0
                                 Y: =0
                                 ZIndex: =2
@@ -2101,7 +2101,7 @@
                                 MaxLength: =DataSourceInfo([@Agenda], DataSourceInfo.MaxLength, 'Agenda Item')
                                 Required: =false
                                 Update: =
-                                Width: =400
+                                Width: =462
                                 X: =0
                                 Y: =1
                                 ZIndex: =2
@@ -2146,8 +2146,8 @@
                                     BorderColor: =RGBA(214, 221, 224, 1)
                                     Default: ="Enter some <strong>rich text</strong> here."
                                     Height: =179
-                                    Width: =369
-                                    X: =24
+                                    Width: =423
+                                    X: =15
                                     Y: =32
                                     ZIndex: =5
 
@@ -2183,7 +2183,7 @@
                         RadiusBottomRight: =4
                         RadiusTopLeft: =4
                         RadiusTopRight: =4
-                        Width: =612
+                        Width: =564
                         X: =28
                         Y: =117
                         ZIndex: =10
@@ -2213,7 +2213,7 @@
                                       </div>  "
                             OnAction: =false
                             OnDrop: =false
-                            Width: =611
+                            Width: =561
                             X: =0
                             Y: =0
                             ZIndex: =1
