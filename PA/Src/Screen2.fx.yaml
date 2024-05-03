@@ -38,6 +38,7 @@ Screen2 As screen:
             ZIndex: =7
 
     "Gallery6 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
+        '#CopilotOverlayLabel': ="Filtered"
         BorderColor: =RGBA(245, 245, 245, 1)
         DelayItemLoading: =true
         Height: =268

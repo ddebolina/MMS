@@ -2264,6 +2264,7 @@
                         ZIndex: =1
 
                     "Gallery5 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+                        '#CopilotOverlayLabel': ="Filtered"
                         BorderColor: =RGBA(245, 245, 245, 1)
                         DelayItemLoading: =true
                         Height: =385
@@ -2606,6 +2607,7 @@
                         ZIndex: =1
 
                     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
+                        '#CopilotOverlayLabel': ="Filtered"
                         BorderColor: =RGBA(245, 245, 245, 1)
                         DelayItemLoading: =true
                         Height: =380
@@ -2853,6 +2855,7 @@
                         ZIndex: =1
 
                     "Gallery4 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+                        '#CopilotOverlayLabel': ="Filtered"
                         BorderColor: =RGBA(245, 245, 245, 1)
                         DelayItemLoading: =true
                         Height: =353

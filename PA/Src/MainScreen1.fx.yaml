@@ -181,6 +181,7 @@
                     ZIndex: =4
 
                 "RecordsGallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
+                    '#CopilotOverlayLabel': ="Filtered"
                     BorderColor: =RGBA(245, 245, 245, 1)
                     Default: =CurrentItem
                     DelayItemLoading: =true
@@ -192,6 +193,7 @@
                     LoadingSpinner: =LoadingSpinner.Data
                     OnSelect: |-
                         =UpdateContext({ itemSelected: true, CurrentItem: ThisItem })
+                    ShowNavigation: =true
                     TemplateFill: =If(Self.IsSelected, RGBA(230, 230, 230, 1), RGBA(0, 0, 0, 0))
                     TemplatePadding: =0
                     TemplateSize: =104
@@ -2915,6 +2917,7 @@
                                 ZIndex: =5
 
                         "Gallery3 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+                            '#CopilotOverlayLabel': ="Filtered"
                             BorderColor: =RGBA(245, 245, 245, 1)
                             DelayItemLoading: =true
                             Height: =MeetingsContainer.Height-40
